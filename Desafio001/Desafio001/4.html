@@ -1,0 +1,32 @@
+<!--4.	Com base no exercício 2 crie uma página alterado de switch/case para if/else.-->
+
+<html>
+    <head> 
+        <title> Exemplo com if/else </title>
+        <script>
+            function formaNumeroPorExtenso(n) {
+                var numeroExtenso = "";
+                if (n === 1) {
+                    numeroExtenso = "Um";
+                } else if (n === 2) {
+                    numeroExtenso = "Dois";
+                } else if (n === 3) {
+                    numeroExtenso = "Três";
+                } else if (n === 4) {
+                    numeroExtenso = "Quatro";
+                } else {
+                    numeroExtenso = "Não definido";
+                }
+                return numeroExtenso;
+            }
+        </script>
+    </head>
+    <body>
+        Número por Extenso <br>
+        <script type="text/javascript">
+            var n1 = parseInt(prompt("Informe um número para extenso"));
+            var extenso = formaNumeroPorExtenso(n1);
+            window.document.writeln(extenso);
+        </script>
+    </body>
+</html>

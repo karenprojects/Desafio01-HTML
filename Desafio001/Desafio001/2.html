@@ -1,0 +1,39 @@
+<!--2.	Criar a página abaixo acrescentando também os números de 4 a 10 para serem 
+    3.	apresentados por extenso.-->
+
+<html>
+    <head> 
+        <title> Exemplo com switch </title>
+        <script>
+            function formaNumeroPorExtenso(n) {
+                var numeroExtenso = "";
+                switch(n) {
+                    case 1: 
+                        numeroExtenso = "Um";
+                        break;
+                    case 2: 
+                        numeroExtenso = "Dois";
+                        break;
+                    case 3: 
+                        numeroExtenso = "Três";
+                        break;
+                    case 4: 
+                        numeroExtenso = "Quatro";
+                        break;
+                    default: 
+                        numeroExtenso = "Não definido";
+                        break;
+                }
+                return numeroExtenso; // Adicionado o retorno do valor calculado
+            }
+        </script>
+    </head>
+    <body>
+        Número por Extenso <br>
+        <script type="text/javascript">
+            var n1 = parseInt(prompt("Informe um número para extenso"));
+            var extenso = formaNumeroPorExtenso(n1);
+            window.document.writeln(extenso);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+
+<!--  5.Com base no exercício 2 crie uma página alterado de switch/case para operador ternário.-->
+
+<html>
+    <head> 
+        <title> Exemplo com operador ternário </title>
+        <script>
+            function formaNumeroPorExtenso(n) {
+                return (n === 1) ? "Um" :
+                       (n === 2) ? "Dois" :
+                       (n === 3) ? "Três" :
+                       (n === 4) ? "Quatro" :
+                       "Não definido";
+            }
+        </script>
+    </head>
+    <body>
+        Número por Extenso <br>
+        <script type="text/javascript">
+            var n1 = parseInt(prompt("Informe um número para extenso"));
+            var extenso = formaNumeroPorExtenso(n1);
+            window.document.writeln(extenso);
+        </script>
+    </body>
+</html>

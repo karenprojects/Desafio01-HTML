@@ -1,0 +1,19 @@
+<!--6.	Crie uma página onde seja informado o nome do produto, valor do produto e um percentual de aumento. 
+Após informar estes valores seja apresentando em uma única frase o nome do produto e seu novo valor.
+Use prompt() para ler e document.write() para apresentar.-->
+
+<html>
+    <head> 
+        <title> Cálculo de Valor com Aumento </title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var nomeProduto = prompt("Informe o nome do produto");
+            var valorProduto = parseFloat(prompt("Informe o valor do produto"));
+            var percentualAumento = parseFloat(prompt("Informe o percentual de aumento"));
+
+            var novoValor = valorProduto * (1 + percentualAumento / 100);
+            document.write("O produto " + nomeProduto + " agora custa R$ " + novoValor.toFixed(2));
+        </script>
+    </body>
+</html>
